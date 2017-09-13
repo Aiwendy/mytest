@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bluetoothtest.cw.com.testapplication.base.CoordinateActivity">
+   <!-- <FrameLayout
+        android:id="@+id/swipe_target"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/activity_coor_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="cn.ihealthbaby.weitaixin.utils.RecycleViewFollowBehavior" />
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="cn.ihealthbaby.weitaixin.utils.FlighBeahvior"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll">
+
+                    <LinearLayout
+                        android:id="@+id/ll_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true">
+
+                        <LinearLayout
+                            android:id="@+id/ll_top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <ImageView
+                                    android:id="@+id/iv_taixin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/home_top" />
+
+
+                                <View
+                                    android:id="@+id/viewClick"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_centerInParent="true" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <cn.ihealthbaby.weitaixin.widget.CircleImageView
+                                    android:id="@+id/iv_babyhead"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:scaleType="centerCrop"
+                                    android:src="@mipmap/home_top_yun" />
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_toutun"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="身长:509mm"
+                                        android:textColor="@color/blcak"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_yunchanqi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_toutun"
+                                        android:layout_marginTop="5dp"
+                                        android:text="孕40周"
+                                        android:textColor="@color/blcak"
+                                        android:textSize="12sp"  />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_tizhong"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="体重:3360g"
+                                        android:textColor="@color/blcak"
+                                        android:textSize="12sp"  />
+
+                                    <TextView
+                                        android:id="@+id/tv_yuchanqitian"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_tizhong"
+                                        android:layout_marginTop="5dp"
+                                        android:text="距离预产期:0天"
+                                        android:textColor="@color/blcak"
+                                        android:textSize="12sp"  />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <TextView
+                                    android:id="@+id/tv_miaoshu"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/corner_background_white_gray2"
+                                    android:padding="10dp"
+                                    android:text="妈妈，预产期到了，我要出来了！如果我今天没有出生，妈妈不要着急，准时报到的宝宝只有5%哦。"
+                                    android:textColor="@color/blcak"
+                                    android:textSize="12sp"  />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white">
+
+                                <LinearLayout
+                                    android:id="@+id/home_parenting_ll"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:visibility="invisible">
+
+                                    <ImageView
+                                        android:id="@+id/btn_to_parenting"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="50dp"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginRight="20dp"
+                                        android:background="@mipmap/home_tran_btn"
+                                        android:scaleType="fitXY" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:background="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+            </android.support.design.widget.AppBarLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+    </FrameLayout>-->
+</LinearLayout>

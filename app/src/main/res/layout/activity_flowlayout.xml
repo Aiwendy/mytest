@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bluetoothtest.cw.com.testapplication.base.FlowlayoutActivity">
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:childSpacing="auto"
+        app:childSpacingForLastRow="align"
+        app:flow="true"
+        app:rowSpacing="8dp">
+
+        <TextView
+          style="@style/flow_layout_style"
+            android:text="日常监护"/>
+
+        <TextView
+            style="@style/flow_layout_style"
+            android:text="感动胎动减少"/>
+        <TextView
+            style="@style/flow_layout_style"
+            android:text="感动胎动频繁"/>
+        <TextView
+            style="@style/flow_layout_style"
+            android:text="院内监护"/>
+        <TextView
+            style="@style/flow_layout_style"
+            android:text="医生建议二次监护"/>
+        <TextView
+            style="@style/flow_layout_style"
+            android:text="其他"/>
+
+
+    </com.nex3z.flowlayout.FlowLayout>
+
+</LinearLayout>
