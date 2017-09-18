@@ -91,6 +91,7 @@ public class LoginActivity extends BaseActivity{
                     @Override
                     public void onSubscribe(@NonNull Disposable d) {
                         DisposableManager.instance().add(d);
+                        
                     }
 
                     @Override
